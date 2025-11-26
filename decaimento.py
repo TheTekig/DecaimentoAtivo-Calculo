@@ -32,7 +32,7 @@ def grafico(n_vals, V_vals, limite):
     return 0
 
 def print_decaimento(n_vals, V_vals, limite, V0, r):
-    
+
     print(colored("\nDECAIMENTO DO VALOR DO ATIVO", 'magenta', attrs=['bold']))
     sleep(0.5)
     print(colored("\nFÓRMULA DA FUNÇÃO:", 'green'))
@@ -58,7 +58,7 @@ def entrada_dados():
             if valor < 0:
                 raise ValueError
             return valor
-        except ValueError:
+        except Exception:
             print(colored("Entrada inválida. Certifique-se de que o valor seja numérico e maior que zero.", 'red'))
             sleep(2)
 
@@ -89,7 +89,8 @@ def main():
             n_max = entrada_dados()
 
 
-        except Exception:
+        except Exception as e:
+            print(colored(f"Erro na entrada de dados: {str(e)}", 'red'))
             sleep(2)
             continue
         
