@@ -27,19 +27,23 @@ def grafico(n_vals, V_vals, limite):
     
     plt.show()
 
-    input(colored("Aperte ENTER para fechar o gráfico", 'green'))
-
     plt.close()
 
     return 0
 
 def print_decaimento(n_vals, V_vals, limite, V0, r):
+    
     print(colored("\nDECAIMENTO DO VALOR DO ATIVO", 'magenta', attrs=['bold']))
+    sleep(0.5)
     print(colored("\nFÓRMULA DA FUNÇÃO:", 'green'))
+    sleep(0.5)
     print(colored(f"V(n) = {V0} * (1 - {r})^n", 'yellow'))
+    sleep(0.5)
 
     print(colored("\nCÁLCULO DO LIMITE (via SymPy):", 'green'))
+    sleep(0.5)
     print(colored(f"lim (n→∞) V(n) = {limite}", 'yellow'))
+    sleep(0.5)
 
     print(colored("\nVALORES CALCULADOS:", 'green'))
     for i in range(len(n_vals)):
@@ -69,7 +73,7 @@ def main():
     while True:
         limpar_tela()
 
-        print(colored("MODELO DE DECAIMENTO DE UM ATIVO", "magenta", attrs=["bold"]) + colored("USANDO LIMITES (SYMPY)\n", "cyan"))
+        print(colored("MODELO DE DECAIMENTO DE UM ATIVO", "magenta", attrs=["bold"]) + colored(" | Usando Limites (SYMPY)\n", "cyan"))
 
         print(colored("Digite os valores solicitados\n", 'green'))
         try:
@@ -116,8 +120,10 @@ def main():
         else: grafico(n_vals, V_vals, limite)
 
 
-        nd = input(colored("Aperte 'Enter' para iniciar um novo decaimento", 'green'))
+        nd = input(colored("< Aperte 'Enter' para iniciar um novo decaimento > \n", 'green'))
 
         if nd == '': continue
         else: break
+
+    print(colored("Encerrando o programa...", 'red'))
 main()

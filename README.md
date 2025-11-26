@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./graph/banner.png" alt="Banner do Projeto" width="100%" />
+  <img src="./assets/banner.png" alt="Banner do Projeto" width="100%" />
 
   <h1>📉 Modelo de Decaimento de Ativo Usando Limites (Python + SymPy)</h1>
 
@@ -54,7 +54,7 @@ Onde:
 ## 📊 Exemplo do Gráfico
 
 <div align="center">
-  <img src="./graph/exemplo_grafico.png" alt="Gráfico de Decaimento" width="80%" />
+  <img src="./assets/exemplo_grafico.png" alt="Gráfico de Decaimento" width="80%" />
 </div>
 
 ---
