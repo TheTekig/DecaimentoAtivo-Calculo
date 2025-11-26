@@ -54,7 +54,7 @@ Onde:
 ## 📊 Exemplo do Gráfico
 
 <div align="center">
-  <img src="COLOQUE_AQUI_EXEMPLO_DO_GRAFICO" alt="Gráfico de Decaimento" width="80%" />
+  <img src="./graph/grafico_1764167158.png" alt="Gráfico de Decaimento" width="80%" />
 </div>
 
 ---
