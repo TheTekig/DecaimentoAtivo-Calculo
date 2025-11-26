@@ -63,7 +63,7 @@ Onde:
 
 O projeto demonstra o uso de **limites aplicados** em:
 
-`V(n)` = `V0``(1 - r)`**`n`
+`V(n)` = `V0(1 - r)`**`n`
 
 Com limite:
 
