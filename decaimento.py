@@ -4,23 +4,30 @@ import sympy as sp
 import os
 from termcolor import colored
 from time import sleep
-
-
+from time import time
 
 
 def grafico(n_vals, V_vals, limite):
-    plt.ion()
+
+    os.makedirs("graph", exist_ok=True)
+
+    plt.ioff()
+    plt.figure()
     plt.plot(n_vals, V_vals, marker='o')
-    plt.axhline(float(limite), color='red', linestyle='--',
-                label=f"Limite = {limite}")
+    plt.axhline(float(limite), color='red', linestyle='--',label=f"Limite = {limite}")
     plt.title("Decaimento do Valor do Ativo e Seu Limite (Cálculo Simbólico)")
     plt.xlabel("Tempo (n)")
     plt.ylabel("Valor V(n)")
     plt.grid(True)
     plt.legend()
+
+    filename = f"./graph/grafico_{int(time())}.png"
+    plt.savefig(filename, dpi=300, bbox_inches="tight")
+    print(colored(f"Gráfico salvo em: {filename}", "green"))
+    
     plt.show()
-    plt.pause(0.001)
-    input(colored("Aperte 'Enter' para fechar gráfico", 'green'))
+
+    input(colored("Aperte ENTER para fechar o gráfico", 'green'))
 
     plt.close()
 
