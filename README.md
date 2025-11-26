@@ -28,7 +28,7 @@ O cálculo do limite é realizado usando **SymPy**, garantindo que o conceito ma
 
 O limite do modelo:
 
-  lim_{`n` -> infty} `V(n)` = `V0` \cdot (1 - r)^`n` = 0
+  `lim_`{`n` -> `infty`} `V(n)` = `V0` * `(1 - r)`**`n` = 0
 
 Onde:
 
@@ -43,7 +43,7 @@ Onde:
 - ✔ Entrada validada para evitar erros do usuário  
 - ✔ Cálculo simbólico do limite usando **SymPy**  
 - ✔ Impressão animada dos valores ano a ano  
-- ✔ Gráfico interativo com Matplotlib  
+- ✔ Gráfico com `Matplotlib`  
 - ✔ Fechamento manual da janela de gráfico  
 - ✔ Interface colorida com `termcolor`  
 - ✔ Limpeza da tela dinâmica (Windows ou Linux)  
@@ -63,11 +63,11 @@ Onde:
 
 O projeto demonstra o uso de **limites aplicados** em:
 
-V(n) = V0(1 - r)^n
+`V(n)` = `V0``(1 - r)`**`n`
 
 Com limite:
 
-lim_{n -> infty} V(n) = 0 \quad \text{para } 0 < r < 1
+`lim_`{`n` -> `infinito`} `V(n)` = `V0` * `(1 - r)`**`n`
 
 ---
 
@@ -85,6 +85,29 @@ lim_{n -> infty} V(n) = 0 \quad \text{para } 0 < r < 1
 
 ```bash
 git clone https://github.com/TheTekig/DecaimentoAtivo-Calculo.git
-cd SEU_REPOSITORIO
+cd DecaimentoAtivo-Calculo
 pip install -r requirements.txt
-python main.py
+python decaimento.py
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+    /
+    ├── decaimento.py
+    ├── README.md
+    ├── /assets
+    │   ├── banner.png
+    │   └── exemplo_grafico.png
+    │
+    ├── /graph
+    │
+    └── requirements.txt
+
+---
+
+## 📜 Licença
+
+    Distribuído sob a licença MIT.
+    Sinta-se livre para utilizar no portfólio, trabalhos acadêmicos ou melhorias pessoais.
