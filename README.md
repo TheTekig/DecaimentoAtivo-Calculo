@@ -1,10 +1,6 @@
 <div align="center">
 
-  <!-- ============================
-       BANNER DO PROJETO
-       (COLOQUE SUA IMAGEM AQUI)
-       ============================ -->
-  <img src="COLOQUE_AQUI_O_LINK_DO_SEU_BANNER" alt="Banner do Projeto" width="100%" />
+  <img src="./graph/Meu.png" alt="Banner do Projeto" width="100%" />
 
   <h1>📉 Modelo de Decaimento de Ativo Usando Limites (Python + SymPy)</h1>
 
@@ -32,9 +28,7 @@ O cálculo do limite é realizado usando **SymPy**, garantindo que o conceito ma
 
 O limite do modelo:
 
-\[
-\lim_{n \to \infty} V(n) = V_0 \cdot (1 - r)^n = 0
-\]
+  lim_{`n` -> infty} `V(n)` = `V0` \cdot (1 - r)^`n` = 0
 
 Onde:
 
@@ -69,15 +63,11 @@ Onde:
 
 O projeto demonstra o uso de **limites aplicados** em:
 
-\[
-V(n) = V_0(1 - r)^n
-\]
+V(n) = V0(1 - r)^n
 
 Com limite:
 
-\[
-\lim_{n \to \infty} V(n) = 0 \quad \text{para } 0 < r < 1
-\]
+lim_{n -> infty} V(n) = 0 \quad \text{para } 0 < r < 1
 
 ---
 
@@ -94,7 +84,7 @@ Com limite:
 ## 📦 Instalação
 
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+git clone https://github.com/TheTekig/DecaimentoAtivo-Calculo.git
 cd SEU_REPOSITORIO
 pip install -r requirements.txt
 python main.py
