@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import sympy as sp
 import os
 from termcolor import colored
+from datetime import datetime
 from time import sleep
 from time import time
 
@@ -33,6 +34,9 @@ def grafico(n_vals, V_vals, limite):
 
 def print_decaimento(n_vals, V_vals, limite, V0, r):
 
+    ano = datetime.now().year
+    ano = int(ano)
+
     print(colored("\nDECAIMENTO DO VALOR DO ATIVO", 'magenta', attrs=['bold']))
     sleep(0.5)
     print(colored("\nFÓRMULA DA FUNÇÃO:", 'green'))
@@ -48,7 +52,7 @@ def print_decaimento(n_vals, V_vals, limite, V0, r):
     print(colored("\nVALORES CALCULADOS:", 'green'))
     for i in range(len(n_vals)):
         sleep(1)
-        print(colored(f"Ano {int(n_vals[i])}", 'cyan') + ':' + f"R$ {V_vals[i]:.2f}")
+        print(colored(f"Ano {int(n_vals[i] + ano)}", 'cyan') + ':' + f"R$ {V_vals[i]:.2f}")
 
 
 def entrada_dados():
